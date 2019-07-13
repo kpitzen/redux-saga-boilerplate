@@ -1,6 +1,6 @@
-import * as types from '../types';
+import { RootState } from '.';
 
-const initialApplicationState: types.AppState = {
+const initialApplicationState: RootState = {
   counter: 0
 }
 

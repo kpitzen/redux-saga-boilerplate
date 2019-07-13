@@ -1,7 +1,10 @@
-import * as types from '../types';
 import { Action } from '../actions/actionTypes';
 
-export default function counter(state: types.AppState['counter'] = 0, action: Action<string>) {
+interface CounterState {
+  counter: number
+}
+
+export default function counter(state: CounterState['counter'] = 0, action: Action<string>) {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1;

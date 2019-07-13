@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Action, Dispatch } from 'redux';
-import { AppState } from '../types';
+import { RootState } from '../reducers';
 import actions from '../actions';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -54,7 +54,7 @@ const CounterButtons: React.FC<CounterButtonsProps> = (props: CounterButtonsProp
     )
 }
 
-const mapStateToProps = (state: AppState) => {
+const mapStateToProps = (state: RootState) => {
   return {
     counter: state.counter
   }

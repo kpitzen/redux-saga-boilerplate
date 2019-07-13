@@ -1,4 +1,4 @@
 
-export interface AppState {
-  counter: number
-};
+export interface TrivialType {
+  unnecessary: string
+}
