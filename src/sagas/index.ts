@@ -1,6 +1,6 @@
 import { all, put, takeEvery } from 'redux-saga/effects'
 
-export const delay = (ms: number) => new Promise(res => setTimeout(res, ms))
+export const delay = (ms: number): Promise<void> => new Promise(res => setTimeout(res, ms))
 
 // ...
 

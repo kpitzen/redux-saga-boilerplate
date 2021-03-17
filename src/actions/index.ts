@@ -2,8 +2,9 @@ import onIncrement from './onIncrement';
 import onDecrement from './onDecrement';
 import onIncrementAsync from './onIncrementAsync';
 
-export default {
+const actions = {
   onIncrement,
   onDecrement,
   onIncrementAsync
 }
+export default actions

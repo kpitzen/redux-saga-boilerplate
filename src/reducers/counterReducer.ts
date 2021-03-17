@@ -4,7 +4,7 @@ interface CounterState {
   counter: number
 }
 
-export default function counter(state: CounterState['counter'] = 0, action: Action<string>) {
+export default function counter(state: CounterState['counter'] = 0, action: Action<string>): number {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1;
